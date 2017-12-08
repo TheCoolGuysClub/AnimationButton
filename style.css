@@ -1,0 +1,49 @@
+#buttonone{
+  height:62px;
+  width:62px;
+  position: relative;
+  margin:2px;
+}
+.Button_Clicked #circle1{
+  animation:rainbow 1s forwards;
+
+}
+.Button_Clicked #circle2{
+  animation:expand2 1s forwards;
+
+}
+#circle1{
+  width:60px;
+  height:60px;
+  border-radius:30px;
+  background-color: pink;
+  z-index:2;
+}
+
+#circle2{
+  width:45px;
+  height:45px;
+  border-radius:25px;
+  background-color: red;
+  /*background-image: url("face1.jpg");*/
+  z-index:3;
+  position:absolute;
+  top:7.5px;
+  left:7.5px;
+}
+@keyframes rainbow{
+  0%{background-color: red;}
+  16.67%{background-color: orange;}
+  33.33%{background-color: yellow;}
+  50%{background-color: pink;}
+  66.67%{background-color: purple;}
+  83.33%{background-color: gold;}
+  90%{background-color: blue;}
+  100%{background-color:green; }
+}
+@keyframes expand2{
+  0%{width:45px; height:45px;}
+  50%{width:52px; height:52px; top:4px;left:4px;}
+  100%{width:45px; height:45px;}
+
+}
